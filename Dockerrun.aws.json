@@ -27,14 +27,14 @@
             "image": "efuentesg/multi-nginx",
             "hostname":"nginx",
             "essential":true,
+            "memory": 128,
             "portMappgins": [
                 {
                     "hostPort": 80,
                     "containterPort": 80
                 }
             ],
-            "links": ["client", "server"],
-            "memory": 128
+            "links": ["client", "server"]
         }
     ]
 }
